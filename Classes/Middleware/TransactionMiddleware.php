@@ -41,7 +41,7 @@ final class TransactionMiddleware implements MiddlewareInterface
             $request->getHeaderLine('baggage')
         );
         $context
-            ->setName(sprintf('%s %s', $request->getMethod(), $request->getUri()->getPath()))
+            ->setName($request->getUri()->getPath())
             ->setOp('http.server')
             ->setSource(TransactionSource::url());
 
