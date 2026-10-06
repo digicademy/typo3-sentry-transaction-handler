@@ -1,0 +1,40 @@
+{
+    "name": "digicademy/typo3-sentry-transaction-handler",
+    "type": "typo3-cms-extension",
+    "description": "Opens a Sentry transaction per TYPO3 request so traces_sample_rate actually produces performance data.",
+    "authors": [
+        {
+            "name": "Frodo Podschwadek",
+            "email": "frodo.podschwadek@adwmainz.de",
+            "role": "Developer",
+            "homepage": "https://www.adwmainz.de/personen/mitarbeiterinnen/profil/frodo-podschwadek.html"
+        }
+    ],
+    "license": [
+        "GPL-2.0+"
+    ],
+    "keywords": [
+        "TYPO3",
+        "Extension",
+        "Sentry",
+        "GlitchTip",
+        "Tracing",
+        "Performance"
+    ],
+    "require": {
+        "php": "8.3 - 8.5",
+        "typo3/cms-core": "^12.4 || ^13.0 || ^14.0",
+        "networkteam/sentry-client": "^6.0",
+        "sentry/sentry": "^4.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Digicademy\\Typo3SentryTransactionHandler\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "sentry_transaction_handler"
+        }
+    }
+}

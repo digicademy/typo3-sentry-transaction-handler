@@ -1,0 +1,8 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Digicademy\Typo3SentryTransactionHandler\:
+    resource: '../Classes/*'
