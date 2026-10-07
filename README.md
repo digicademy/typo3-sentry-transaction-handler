@@ -1,5 +1,8 @@
 # TYPO3 Sentry Transaction Handler
 
+[![Packagist Downloads](https://img.shields.io/packagist/dt/digicademy/typograph?logo=packagist)](https://packagist.org/packages/digicademy/typo3-sentry-transaction-handler)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/digicademy/typograph?logo=github)](https://github.com/digicademy/typo3-sentry-transaction-handler/commits/main/)
+
 A small TYPO3 extension that opens one Sentry performance transaction per HTTP
 request, so that `traces_sample_rate` in your Sentry (or GlitchTip) configuration actually produces data in the "Performance" view.
 
